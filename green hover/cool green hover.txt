@@ -1,0 +1,120 @@
+HTML
+
+//---------------------------------------------
+
+<div class="sm">
+    
+<a href=""><i class="fab fa-facebook-f"></i></a>
+   
+<a href=""><i class="fab fa-twitter"></i></a>
+
+<a href=""><i class="fab fa-instagram"></i></a>
+</div>
+
+//--------------------------
+
+CSS
+
+//----------------------------------
+
+body{
+    
+background:#2c3a47;
+    
+display:flex;
+    
+justify-content:center;
+    
+align-items:center;
+    
+height:200px;
+
+}
+
+
+.sm{
+    
+cursor:pointer;
+    
+
+}
+
+
+
+.sm a{
+    
+color:#6ab04c;
+    
+display:inline-block;
+    
+width:80px;
+    
+height:80px;
+    
+position:relative;
+    
+margin:0 16px;
+    
+font-size:40px;
+    
+line-height:80px;
+    
+text-align:center;
+
+}
+
+
+
+.sm a:hover{
+    
+color:#c4fb6d;
+    
+transform: scale(1.1);
+    
+transition:all 0.8s ease;
+
+}
+
+
+
+.sm a:before, .sm a:after{
+    
+content:'';
+    
+position:absolute;
+    
+width:100%;
+    
+height:100%;
+    
+transition:all 0.5s ease;
+    
+top:0;
+    
+left:0;
+
+}
+
+
+.sm a:hover:before{
+    
+border-left:1px solid #c4fb6d;
+    
+border-right:1px solid #c4fb6d;
+    
+transform:skewX(20deg);
+
+}
+
+
+.sm a:hover:after{
+    
+border-bottom:1px solid #c4fb6d;
+    
+border-top:1px solid #c4fb6d;
+    
+transform:skewY(-20deg);
+}
+
+
+
